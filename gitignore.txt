@@ -1,0 +1,44 @@
+# Exclude the .htaccess file
+.htaccess
+
+# Exclude any PSD/AI source
+*.psd
+*.ai
+ 
+# Exclude the build products
+build/*
+*.[oa]
+
+# Exclude OS X folder attributes
+.DS_Store
+ 
+# Exclude Text Files
+*.txt
+# Except read me
+!README.txt
+
+# Exclude log files
+*.log
+
+# Exclude Fonts
+_fonts/
+ 
+ #
+ *-
+
+ #.a
+ # But do track lib.a, even though you are excluding .a files above
+ !lib.a
+
+ # Only exclude the TODO file in the current directory, not subdir/TODO
+ /TODO
+
+ # Exclude all files in the build/ directory
+ build/
+
+ # Exclude doc/notes.txt, but not doc/server/arch.txt
+ doc/*.txt
+
+ # Exclude all .pdf files in the doc/ directory
+ doc/**/*.pdf
+
