@@ -21,7 +21,7 @@ and
 ```
 sudo apt-get install cmake
 ```
-Then clone the mjpg streamer from [jacksonliam's github site](https://github.com/jacksonliam/mjpg-streamer.git" title="jackson liam") and create a folder for it, all within in the same command:
+Then clone the mjpg streamer from [jacksonliam's github site](https://github.com/jacksonliam] ("title="jackson liam") and create a folder for it, all within in the same command:
 ```
 git clone https://github.com/jacksonliam/mjpg-streamer.git ~/mjpg streamer
 ```
@@ -60,7 +60,7 @@ sudo nano /etc/rc.local
 and paste the code before the exit 0 line at the bottom. Save and exit the file:
 ![params](https://cloud.githubusercontent.com/assets/21986609/18417320/0e049218-7824-11e6-9d23-06426b74cd0e.jpg)
 
-Change the parameters to your needs. The defaults are *-vf* and *-hf* that flips the picture upside down. *-fps 15* Frames per second is set to 15, streaming pretty good video quality with low bandwidth. -x 640 -y 480* is the screen resolution. The port of the web server is going to *-p 9000*.
+Change the parameters to your needs. The defaults are **-vf** and **-hf** that flips the picture upside down. **-fps 15** frames per second is set to 15, streaming pretty good video quality with low bandwidth. **-x 640 -y 480** is the screen resolution. The port of the web server is going to **-p 9000**.
 
 9. Reboot the Rpi:
 ```
