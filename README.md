@@ -56,16 +56,16 @@ Open te file from the command line:
 ```
 sudo nano /etc/rc.local
 ```
-and paste the code before the exit 0 line at the bottom
+and paste the code before the exit 0 line at the bottom and save the file
+![params](https://cloud.githubusercontent.com/assets/21986609/18417320/0e049218-7824-11e6-9d23-06426b74cd0e.jpg)
 
-This line of code holds pramaeters that can be hang to your needs
-insert screen grapb here
-where
-xxx
-x
-xx
+Change to parameters to your needs. The defaults are where -vf and -hf rotate th picture 180 upside down. Frames per second is set to 15 gives you pretty good video with low bandwidth. 640  x 480 is te screen resolution. The port of the web server is going to be 9000
+
 Reboot the Rpi:
 ```
 sudo reboot
 ```
 go to your ip address:9000 and the mjpg-streamer will be up and running. That's it.
+
+![stream](https://cloud.githubusercontent.com/assets/21986609/18417210/62823dde-7821-11e6-8b69-de9f5b38d912.jpg)
+
