@@ -21,7 +21,7 @@ and
 ```
 sudo apt-get install cmake
 ```
-Then clone the mjpg streamer from [jacksonliam's github site](https://www.github.com/jacksonliam "Jacksonliam's Homepage") and create a folder for it, all within in the same command:
+Then clone the mjpg streamer from [Jacksonliam's Github site](https://www.github.com/jacksonliam "Jacksonliam's Homepage") and create a folder for it, all within in the same command:
 ```
 git clone https://github.com/jacksonliam/mjpg-streamer.git ~/mjpg streamer
 ```
