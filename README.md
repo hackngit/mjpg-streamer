@@ -8,7 +8,7 @@ Setup:
 * Camera module attached and enabled
 * ssh enabled
 
-Start with ssh into your Pi and start with thse usual:
+Start with ssh into your Pi and update:
 ```
 sudo apt-get update
 ```
