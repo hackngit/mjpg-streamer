@@ -62,11 +62,11 @@ and paste the code before the exit 0 line at the bottom. Save and exit the file:
 
 Change the parameters to your needs. The defaults are **-vf** and **-hf** that flips the picture upside down. **-fps 15** frames per second is set to 15, streaming pretty good video quality with low bandwidth. **-x 640 -y 480** is the screen resolution. The port of the web server is going to **-p 9000**.
 
-9. Reboot the Rpi:
+Reboot the Rpi:
 ```
 sudo reboot
 ```
-10. Go to your ip address:9000 and the mjpg-streamer will be up and running. That's it.
+Go to your ip address:9000 and the mjpg-streamer will be up and running. That's it.
 
 ![stream](https://cloud.githubusercontent.com/assets/21986609/18417210/62823dde-7821-11e6-8b69-de9f5b38d912.jpg)
 
