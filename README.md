@@ -1,17 +1,16 @@
 # Mjpg streamer for Rpi Jessie
 ## How to get an mjpg streamer working on a Raspberry Pi 3 with Debian Jessie OS in plain English. 
-
-
 ![1367-07](https://cloud.githubusercontent.com/assets/21986609/18231653/2b8c782c-72b7-11e6-92dc-f0bc6c6606a5.jpg)
-
-
-## This repo is work in progress 
-
-ssh into your pi and start with thse usual:
+Setup
+* RPi 3
+* Rasbian Jessie OS
+* Camera module attached and enabled
+*ssh enabled
+1. ssh into your pi and start with thse usual:
 ```
 sudo apt-get update
 ```
-Pull a couple of libraries:
+2. Pull a couple of libraries:
 
 ```
 sudo apt-get install libjpeg62-turbo-dev
@@ -20,15 +19,15 @@ and
 ```
 sudo apt-get install cmake
 ```
-Then clone the mjpg streamer from <a href="https://github.com/jacksonliam/mjpg-streamer.git" title="jackson liam"></a> and create a folder for it, all within in the same command:
+3. Then clone the mjpg streamer from <a href="https://github.com/jacksonliam/mjpg-streamer.git" title="jackson liam"></a> and create a folder for it, all within in the same command:
 ```
 git clone https://github.com/jacksonliam/mjpg-streamer.git ~/mjpg streamer
 ```
-change the directory from home to the mjpg-streamer:
+4.Change the directory from home to the mjpg-streamer:
 ```
 cd mjpg-streamer
 ```
-Then into the mjpg-streamer-experimental:
+5. Then into the mjpg-streamer-experimental:
 ```
 cd mjpg-streamer-experimental
 ```
@@ -36,15 +35,15 @@ and build it:
 ```
 sudo make clean all
 ```
-make a new directory in the opt directory. Opt holds optional software and packages that you install that are not required for the system to run. In the old days, "/opt" was used by UNIX vendors like AT&T, Sun, DEC and 3rd-party vendors to hold "Option" packages;
+6. Make a new directory in the opt directory. Opt holds optional software and packages that you install that are not required for the system to run. In the old days, "/opt" was used by UNIX vendors like AT&T, Sun, DEC and 3rd-party vendors to hold "Option" packages;
 ```
 sudo mkdir /opt/mjpg-streamer
 ```
-Move everything into the new new directory:
+7. Move everything into the new new directory:
 ```
 sudo mv * /opt/mjpg-streamer
 ```
-now comes the tricky bit, change to the home directory:
+8. Now comes the tricky bit, change to the home directory:
 ```
 cd
 ```
@@ -61,11 +60,11 @@ and paste the code before the exit 0 line at the bottom and save the file
 
 Change to parameters to your needs. The defaults are where -vf and -hf rotate th picture 180 upside down. Frames per second is set to 15 gives you pretty good video with low bandwidth. 640  x 480 is te screen resolution. The port of the web server is going to be 9000
 
-Reboot the Rpi:
+9. Reboot the Rpi:
 ```
 sudo reboot
 ```
-go to your ip address:9000 and the mjpg-streamer will be up and running. That's it.
+10. go to your ip address:9000 and the mjpg-streamer will be up and running. That's it.
 
 ![stream](https://cloud.githubusercontent.com/assets/21986609/18417210/62823dde-7821-11e6-8b69-de9f5b38d912.jpg)
 
