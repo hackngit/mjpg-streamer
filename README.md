@@ -70,4 +70,4 @@ sudo reboot
 
 ![stream](https://cloud.githubusercontent.com/assets/21986609/18417210/62823dde-7821-11e6-8b69-de9f5b38d912.jpg)
 
-Enjoy.
+Enjoy!
