@@ -1,4 +1,4 @@
-# Mjpg streamer for Rpi Jessie
+# Mjpg streamer for RPi Jessie
 ## How to get an mjpg streamer working on a Raspberry Pi 3 with Debian Jessie OS in plain English. 
 ![1367-07](https://cloud.githubusercontent.com/assets/21986609/18231653/2b8c782c-72b7-11e6-92dc-f0bc6c6606a5.jpg)
 
@@ -47,7 +47,7 @@ sudo mv * /opt/mjpg-streamer
 ```
 Now comes the tricky bit, change to the home directory:
 ```
-cd8
+cd
 ```
 Copy this line:
 ```
@@ -62,7 +62,7 @@ and paste the code before the exit 0 line at the bottom. Save and exit the file:
 
 Change the parameters to your needs. The defaults are **-vf** and **-hf** that flips the picture upside down. **-fps 15** frames per second is set to 15, streaming pretty good video quality with low bandwidth. **-x 640 -y 480** is the screen resolution. The port of the web server is going to **-p 9000**.
 
-Reboot the Rpi:
+Reboot the RPi:
 ```
 sudo reboot
 ```
